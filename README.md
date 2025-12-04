@@ -84,7 +84,7 @@ See [CLC issue
 Decoupling `base` from GHC introduces new governance and operations
 overhead:
 
-- A new base maintainer group will be required, with clear leadership.
+- A new `base` maintainer group will be required, with clear leadership.
 - Coordination between GHC releases and `base` releases becomes a
   cross-project responsibility.
 - The CI infrastructure must test multiple GHC versions against multiple
@@ -99,7 +99,7 @@ development of `base` risks fragmentation and ecosystem instability.
 ### Open questions
 
 - Who maintains the independent `base` repository?
-- How do GHC HQ, CLC, and base maintainers coordinate?
+- How do GHC HQ, CLC, and `base` maintainers coordinate?
 
 ### Possible solutions
 
@@ -137,7 +137,7 @@ currently uses to enforce these bounds.
   relationship is broken?
 * How do we maintain safety for users of older versions of Cabal that do
   not understand new constraint formats?
-* Does allowing reinstalling base help if library authors will then
+* Does allowing reinstalling `base` help if library authors will then
   upper-bound compiler version instead? Are we solving the right
   problem?
 * How would a package express a bound on a non-GHC Haskell compiler,
