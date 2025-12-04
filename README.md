@@ -112,7 +112,7 @@ development of `base` risks fragmentation and ecosystem instability.
 * `base` should be split out soon to motivate doing the rest of the
   work.
 
-## 3. Loss of GHC-version signaling
+## 3. Loss of GHC version signaling
 
 ### Problem
 
