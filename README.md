@@ -1,32 +1,32 @@
-# Project Goal: What “Reinstallable base” Means
+# Project goal: What “reinstallable `base`” means
 
-The overall goal of reinstallable base is to make the base library
-independently versioned, maintainable, and replaceable outside of the GHC
-source tree. Today, `base` is effectively part of the compiler: its
-implementation is interwoven with GHC internals, it shares a release cycle with
-the compiler, and it cannot be upgraded, downgraded, patched, or experimentally
-replaced without rebuilding GHC itself. A reinstallable base would separate
-these concerns. It would allow base to evolve under its own stewardship,
-and reduce the coupling between compiler development and library development.
+The overall goal of the reinstallable `base` project is for the `base`
+library to be replaceable, versioned independently of GHC, and
+maintained outside of the GHC repository. Today, `base` is effectively
+part of the compiler: its implementation is interwoven with GHC
+internals, it shares a release cycle with GHC, and it cannot be
+upgraded, downgraded, patched, or experimentally replaced without
+rebuilding GHC itself. A reinstallable `base` would not suffer from
+these issues and could evolve under its own stewardship with less
+coupling between compiler development and library development.
 
-# Repository Purpose and Scope
+# Purpose of this repository
 
-This repository acts as the coordination hub for the reinstallable base effort.
-It does not (yet) contain an implementation or prototype; instead, it collects the
-problem statements, design constraints, open questions, and cross-project
-coordination tasks that must be resolved before such an implementation is
-feasible. It links together GHC HQ, the Core Libraries Committee, Cabal
-maintainers, and external contributors, providing a shared place to track
-blockers, document decisions, and plan the sequence of work.
+This repository acts as the coordination hub for the reinstallable
+`base` effort. It does not yet contain a prototype, but it collects the
+problems, design constraints, open questions, and cross-project
+coordination tasks that must be addressed before such an implementation
+can be feasible. It links together GHC HQ, the Core Libraries Committee,
+Cabal maintainers, and external contributors, providing a shared place
+to track blockers, document decisions, and plan the sequence of work.
 
-The most recent discussions about `reinstallable-base` took place on these threads:
+The discussions about reinstallable `base` that lead to the creation of
+this repository took place in the following spaces:
 
-* [Discourse](https://discourse.haskell.org/t/what-are-the-next-steps-for-reinstallable-base/13319/)
-* [CLC Issue Tracker #375](https://github.com/haskell/core-libraries-committee/issues/375)
+* [Discourse thread #13319](https://discourse.haskell.org/t/13319)
+* [CLC issue #375](https://github.com/haskell/core-libraries-committee/issues/375)
 
-This project tracks progress towards the four goals identified to make the project possible:
-
------
+# Problem areas
 
 ## 1. Entanglement between `base` and `ghc-internal`
 
