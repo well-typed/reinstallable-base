@@ -120,7 +120,7 @@ The ecosystem currently relies on `base` version bounds as proxies for
 specifying compatible GHC versions. This convention works because GHC
 and `base` are maintaining a tight mapping regarding their versions. If
 `base` becomes independently versioned, `base` bounds will no longer
-provide information about compiler compatibility. Consequently packages
+provide information about compiler compatibility. Consequently, packages
 may be silently built against unsupported GHC versions.
 
 ### Why this matters
