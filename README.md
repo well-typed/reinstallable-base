@@ -163,7 +163,7 @@ have serious limitations:
 * `if impl(ghc)`:
     - Not revision-friendly
     - Not backwards-compatible with older Cabal versions
-    - `impl(ghc >= 9.12) and `!impl(ghc < 9.12)` having different
+    - `impl(ghc >= 9.12)` and `!impl(ghc < 9.12)` having different
       meanings
         + `impl(ghc >= 9.12)` means “the implementation is GHC and its
           version is >= 9.12”.
