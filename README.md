@@ -28,9 +28,9 @@ this repository took place in the following spaces:
 
 # Problem areas
 
-1. Entanglement between `base` and `ghc-internal`
+1. Entanglement between `base` and `ghc-internal`:
    https://github.com/well-typed/reinstallable-base/labels/entanglement
-2. Governance challenges
+2. Governance challenges:
    https://github.com/well-typed/reinstallable-base/labels/governance
-3. Specification of GHC version constraints
+3. Specification of GHC version constraints:
    https://github.com/well-typed/reinstallable-base/labels/GHC%20version%20constraints
