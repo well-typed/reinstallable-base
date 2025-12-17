@@ -34,3 +34,8 @@ this repository took place in the following spaces:
    https://github.com/well-typed/reinstallable-base/labels/governance
 3. Specification of GHC version constraints:
    https://github.com/well-typed/reinstallable-base/labels/GHC%20version%20constraints
+
+# Investigations
+
+* [An attempt to make the `base` version of GHC 9.10.2 usable with
+  GHC 9.12.2](shimming/9.10.2-9.12.2)

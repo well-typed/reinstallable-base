@@ -1,0 +1,6 @@
+#! /usr/bin/env sh
+
+sed -E -e '
+    s/(ghc-internal|base)-[0-9.]+://g
+    s/\[0\]//g
+'
