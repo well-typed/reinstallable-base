@@ -39,5 +39,7 @@ this repository took place in the following spaces:
 
 * [An attempt to make the `base` version of GHC 9.10.2 usable with
   GHC 9.12.2](shimming/9.10.2-9.12.2)
+* [Hackage uses of GHC-specific `base` modules with stability
+  risk 3](hackage-uses-of-internals/stability-risk-3)
 * [An attempt to move module implementations that are not tied to GHC
   into `base`](moving-code-to-base/whole-modules)

@@ -1,0 +1,52 @@
+Can be imported from `GHC.IO.Handle`
+Can be imported from `System.IO`
+Can use `(<!>)` instead
+Can use `round` instead
+Does perhaps not need to do this, because, according to a comment in `SubHask.Compatibility.Base`, it does so only because of `NoIO` not being a `Functor` instance, while in fact `NoIO` is a `Monad` instance, the `Functor`–`Applicative`–`Monad` proposal was implemented in GHC 7.10, and `subhask-0.1.1.0` requires GHC 7.10 or later
+Does so for automatic finalization of handles
+Does so for blocking access to a handle
+Does so for checking whether a file descriptor refers to a socket on Windows
+Does so for constructing a Haskell handle from an operating-system handle on Windows
+Does so for duplicating a handle without flushing, using code that is almost identical to the code implementing `GHC.IO.Handle.hDuplicate`
+Does so for file synchronization
+Does so for handling I/O errors
+Does so for implementing `hGetChunk`
+Does so for implementing `hGetLine`
+Does so for implementing `hPutStr`
+Does so for implementing `handleToFd`
+Does so for implementing a variant of `hDuplicateTo`, which in particular does not suffer from a certain bug
+Does so for implementing several other low-level, Windows-specific operations
+Does so for implementing the internal `hPut` operation, defined in `Data.ByteString.Builder.Internal`
+Does so for implementing the lazy variant of `hGetContents`
+Does so for implementing the strict variant of `hGetContents`
+Does so for introducing the instantiation `TextShow Handle`
+Does so for marking the file descriptor of a handle as blocking on non-JavaScript platforms
+Does so for no apparent reason
+Does so for obtaining a file descriptor, suitable for writing, from a handle
+Does so for reading a bunch of characters, using code that is identical to the code implementing `GHC.IO.Handle.Text.getSomeCharacters`
+Does so for reading a chunk of text
+Does so for reading a line
+Does so for reading available data into a character buffer, using code that is almost identical to the code implementing `GHC.IO.Handle.Text.maybeFillReadBuffer`
+Does so for reading until right after a newline has been read or, if no newline is present, until the end of the buffer is reached (with code that, according to a source code comment, has been “hacked out” of `Data.ByteString`)
+Does so for reading until the next NUL character, using code that is almost identical to the code implementing `Data.ByteString.hGetLine`
+Does so for redirecting the output of a handle to a byte string (via a temporary file)
+Does so for replicating `stdHandleFinalizer` from `GHC.Internal.IO.Handle.FD` and `GHC.Internal.IO.Handle.Windows`
+Does so for resetting standard handles to their default configurations
+Does so for selectively setting `FILE_FLAG_OVERLAPPED`
+Does so for setting and restoring the file descriptor of a handle
+Does so for signaling an end of transmission using SMP
+Does so for signaling an end of transmission using TLS
+Does so for writing out data from a character buffer
+Does so for writing out data from a character buffer, using code that is almost identical to the code implementing `GHC.IO.Handle.Text.commitBuffer`
+Does so for writing out data from a character buffer, using code that is identical to the code implementing `GHC.IO.Handle.Text.commitBuffer`
+Does so for writing streams with special handling of UTF-8 and no newline conversion, using code that is almost identical to code from `GHC.IO.Handle.Text`
+Does so in a re-implementation of `readFile` that is better behaved regarding profiling
+Does so in preparation for file synchronization
+Does so in some strange-looking code
+Does so in tests to swap the configurations of two handles
+Does so to obtain the next spare character buffer, using code that is almost identical to the code implementing `GHC.Internal.IO.Handle.Text.getSpareBuffer`
+Does so to obtain the next spare character buffer, using code that is identical to the code implementing `GHC.Internal.IO.Handle.Text.getSpareBuffer`
+Does so to swap the configurations of two handles
+Probably due to a policy of covering all types of `base`
+Probably stems from a misconception regarding representation of line breaks in Haskell
+Should perhaps use rationals instead of floating point numbers in the first place
