@@ -35,7 +35,9 @@ this repository took place in the following spaces:
 3. Specification of GHC version constraints:
    https://github.com/well-typed/reinstallable-base/labels/GHC%20version%20constraints
 
-# Investigations
+# Exploratory work
 
 * [An attempt to make the `base` version of GHC 9.10.2 usable with
   GHC 9.12.2](shimming/9.10.2-9.12.2)
+* [An attempt to move module implementations that are not tied to GHC
+  into `base`](moving-code-to-base/whole-modules)
