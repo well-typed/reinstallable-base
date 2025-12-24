@@ -16,12 +16,12 @@ according to these recommendations.
 These undertakings are documented in two files:
 
   * The file
-    [by-module-and-using-package.md](by-module-and-using-package.md)
+    [`by-module-and-using-package.md`](by-module-and-using-package.md)
     lists all uses of modules with stability risk 3 by Hackage packages.
     The uses are grouped by used module and using package. Each use is
     annotated with the reasons for it or an immediate way to avoid it.
 
-  * The file [by-purpose.md](by-purpose.md) discusses the high-level
+  * The file [`by-purpose.md`](by-purpose.md) discusses the high-level
     purposes of some of the module uses presented in the previous file.
     For each purpose, it lists the following:
 

@@ -141,5 +141,5 @@ Other purposes
 The concrete descriptions of those usage reasons from which higher-level
 purposes have not yet been distilled and that are therefore not
 mentioned in this document are listed in the file
-[untreated-usage-reasons](untreated-usage-reasons): one per line, in
+[`untreated-usage-reasons`](untreated-usage-reasons): one per line, in
 lexicographic order according to the POSIX locale.
