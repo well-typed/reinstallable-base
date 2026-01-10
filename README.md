@@ -43,3 +43,5 @@ this repository took place in the following spaces:
   into `base`](moving-code-to-base/whole-modules)
 * [An attempt to make the `base` version of GHC 9.10.2 usable with
   GHC 9.12.2](shimming/9.10.2-9.12.2)
+* [A history preserving script to extract base from ghc's git history
+  ](rewriting-history/revision.sh)
