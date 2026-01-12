@@ -4,7 +4,6 @@ Can use `(<!>)` instead
 Can use `round` instead
 Does perhaps not need to do this, because, according to a comment in `SubHask.Compatibility.Base`, it does so only because of `NoIO` not being a `Functor` instance, while in fact `NoIO` is a `Monad` instance, the `Functor`–`Applicative`–`Monad` proposal was implemented in GHC 7.10, and `subhask-0.1.1.0` requires GHC 7.10 or later
 Does so for automatic finalization of handles
-Does so for blocking access to the standard input
 Does so for checking whether a file descriptor refers to a socket on Windows
 Does so for constructing a Haskell handle from an operating-system handle on Windows
 Does so for duplicating a handle without flushing, using code that is almost identical to the code implementing `GHC.IO.Handle.hDuplicate`

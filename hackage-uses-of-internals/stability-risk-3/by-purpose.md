@@ -61,6 +61,37 @@ Example usages of the alternative approaches
   * [biegunka/terminal-size#20](https://github.com/biegunka/terminal-size/pull/20)
 
 
+Blocking access to I/O streams
+==============================
+
+
+Concrete descriptions of usage reasons
+--------------------------------------
+
+  * Does so for blocking access to the standard input
+
+
+Affected packages
+-----------------
+
+  * [`sensei`](https://hackage.haskell.org/package/sensei)
+
+
+Alternative approaches
+----------------------
+
+  * Use the new operations for operating-system handle acquisition that
+    GHC merge request
+    [!14732](https://gitlab.haskell.org/ghc/ghc/-/merge_requests/14732)
+    adds to `base`
+
+
+Example usages of the alternative approaches
+--------------------------------------------
+
+[None]
+
+
 Determination of line break encodings used by handles
 =====================================================
 
