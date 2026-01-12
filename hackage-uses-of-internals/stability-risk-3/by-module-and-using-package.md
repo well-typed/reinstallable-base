@@ -337,7 +337,7 @@
 --------------
 
   * Uses `wantReadableHandle_`
-      - Does so for blocking access to a handle
+      - Does so for blocking access to the standard input
 
 
 `shh-0.7.3.0`
