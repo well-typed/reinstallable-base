@@ -1178,6 +1178,8 @@
       - Can be imported from `System.IO`
   * Uses `Handle`’s data constructors
       - Does so for acquiring the file path underlying a handle
+      - Can be circumvented by employing the `Show` instance for
+        `Handle`
 
 
 `text-utf8-1.2.3.0`
