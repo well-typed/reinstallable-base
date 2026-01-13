@@ -3,6 +3,7 @@ Can be imported from `System.IO`
 Can use `(<!>)` instead
 Can use `round` instead
 Does perhaps not need to do this, because, according to a comment in `SubHask.Compatibility.Base`, it does so only because of `NoIO` not being a `Functor` instance, while in fact `NoIO` is a `Monad` instance, the `Functor`–`Applicative`–`Monad` proposal was implemented in GHC 7.10, and `subhask-0.1.1.0` requires GHC 7.10 or later
+Does so for acquiring the file path underlying a handle
 Does so for automatic finalization of handles
 Does so for checking whether a file descriptor refers to a socket on Windows
 Does so for constructing a Haskell handle from an operating-system handle on Windows
@@ -17,7 +18,6 @@ Does so for implementing several other low-level, Windows-specific operations
 Does so for implementing the internal `hPut` operation, defined in `Data.ByteString.Builder.Internal`
 Does so for implementing the lazy variant of `hGetContents`
 Does so for implementing the strict variant of `hGetContents`
-Does so for introducing the instantiation `TextShow Handle`
 Does so for marking the file descriptor of a handle as blocking on non-JavaScript platforms
 Does so for no apparent reason
 Does so for obtaining a file descriptor, suitable for writing, from a handle

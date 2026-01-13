@@ -1177,7 +1177,7 @@
   * Uses `Handle`
       - Can be imported from `System.IO`
   * Uses `Handle`’s data constructors
-      - Does so for introducing the instantiation `TextShow Handle`
+      - Does so for acquiring the file path underlying a handle
 
 
 `text-utf8-1.2.3.0`
