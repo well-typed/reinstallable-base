@@ -252,7 +252,7 @@
 ---------------
 
   * Uses `wantWritableHandle`
-      - Does so for file synchronization
+      - Does so for obtaining the file descriptor of a handle
 
 
 `network-socket-options-0.2.0.1`
@@ -833,9 +833,9 @@
 ---------------
 
   * Uses `Handle__`’s data constructor
-      - Does so for file synchronization
+      - Does so for obtaining the file descriptor of a handle
   * Uses `haDevice`
-      - Does so for file synchronization
+      - Does so for obtaining the file descriptor of a handle
 
 
 `liquid-fixpoint-8.10.7`

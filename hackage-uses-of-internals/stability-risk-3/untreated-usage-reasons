@@ -7,7 +7,6 @@ Does so for automatic finalization of handles
 Does so for checking whether a file descriptor refers to a socket on Windows
 Does so for constructing a Haskell handle from an operating-system handle on Windows
 Does so for duplicating a handle without flushing, using code that is almost identical to the code implementing `GHC.IO.Handle.hDuplicate`
-Does so for file synchronization
 Does so for handling I/O errors
 Does so for implementing `hGetChunk`
 Does so for implementing `hGetLine`
