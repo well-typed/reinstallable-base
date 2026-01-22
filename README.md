@@ -1,13 +1,14 @@
-# Project goal: What “reinstallable `base`” means
+# What “reinstallable `base`” means
 
 The overall goal of the reinstallable `base` project is for the `base`
 library to be replaceable, versioned independently of GHC, and
-maintained outside of the GHC repository. Today, `base` is effectively
-part of the compiler: its implementation is interwoven with GHC
-internals, it shares a release cycle with GHC, and it cannot be
-upgraded, downgraded, patched, or experimentally replaced without
-rebuilding GHC itself. A reinstallable `base` would not suffer from
-these issues and could evolve under its own stewardship with less
+maintained outside of the GHC repository.
+
+Today, `base` is effectively part of the compiler: its implementation is
+interwoven with GHC internals, it shares a release cycle with GHC, and
+it cannot be upgraded, downgraded, patched, or experimentally replaced
+without rebuilding GHC itself. A reinstallable `base` would not suffer
+from these issues and could evolve under its own stewardship with less
 coupling between compiler development and library development.
 
 # Purpose of this repository
