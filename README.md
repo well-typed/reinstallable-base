@@ -32,6 +32,14 @@ this repository took place in the following spaces:
 * [Discourse thread #13319](https://discourse.haskell.org/t/13319)
 * [CLC issue #375](https://github.com/haskell/core-libraries-committee/issues/375)
 
+# Foundational questions
+
+1. Why do we want `base` to be reinstallable? What concrete workflows
+   are we trying to improve?
+2. Why does `ghc-internal` need to evolve over time?
+3. How does `ghc-internal` evolve in practice?
+4. What does the current process of updating `base` look like in
+   practice?
 
 # Exploratory work
 
@@ -42,17 +50,7 @@ this repository took place in the following spaces:
 * [An attempt to make the `base` version of GHC 9.10.2 usable with
   GHC 9.12.2](shimming/9.10.2-9.12.2)
 
-# Questions to answer
-
-These are the questions which arose from the discussion around reinstallable base
-on [CLC #375](https://github.com/haskell/core-libraries-committee/issues/375)
-
-## Foundational Questions about the project
-
-1. Why do we want `base` to be reinstallable? What concrete user workflows are we trying to improve?
-2. Why does `ghc-internal` need to evolve over time?
-3. How does `ghc-internal` evolve in practice?
-4. What does the current process of updating `base` look like in practice?
+# Subprojects
 
 ## 1. Disentanglement  between `base` and `ghc-internal` - Blocking
 
