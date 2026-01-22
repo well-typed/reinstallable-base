@@ -7,9 +7,14 @@ maintained outside of the GHC repository.
 Today, `base` is effectively part of the compiler: its implementation is
 interwoven with GHC internals, it shares a release cycle with GHC, and
 it cannot be upgraded, downgraded, patched, or experimentally replaced
-without rebuilding GHC itself. A reinstallable `base` would not suffer
-from these issues and could evolve under its own stewardship with less
-coupling between compiler development and library development.
+without rebuilding GHC itself. If `base` was reinstallable, it would not
+suffer from these issues. It could evolve under its own stewardship with
+less coupling between compiler and library development. Users would be
+able to upgrade `base` independently of GHC, which would support in
+particular the following workflows:
+
+1. The user updates GHC without updating `base`.
+2. The user updates `base` without updating GHC.
 
 # Purpose of this repository
 
@@ -27,14 +32,6 @@ this repository took place in the following spaces:
 * [Discourse thread #13319](https://discourse.haskell.org/t/13319)
 * [CLC issue #375](https://github.com/haskell/core-libraries-committee/issues/375)
 
-# Benefits for users
-
-From the perspective of users, the benefit of `base` being reinstallable
-would be that they could upgrade `base` independently of GHC. This would
-in particular support the following workflows:
-
-1. The user updates GHC without updating `base`.
-2. The user updates `base` without updating GHC.
 
 # Exploratory work
 
