@@ -2,8 +2,8 @@ Acquisition of operating-system handles
 =======================================
 
 
-Concrete descriptions of usage reasons
---------------------------------------
+Explanations of uses
+--------------------
 
   * Does so for obtaining the file descriptor of a handle
   * Does so for obtaining the file descriptor of a handle on Unix
@@ -50,8 +50,8 @@ Alternative approaches
     package, if applicable
 
 
-Example usages of the alternative approaches
---------------------------------------------
+Example uses of the alternative approaches
+------------------------------------------
 
   * [UnkindPartition/ansi-terminal#187](https://github.com/UnkindPartition/ansi-terminal/pull/187)
   * [haskell/haskeline#211](https://github.com/haskell/haskeline/pull/211)
@@ -65,8 +65,8 @@ Blocking access to I/O streams
 ==============================
 
 
-Concrete descriptions of usage reasons
---------------------------------------
+Explanations of uses
+--------------------
 
   * Does so for blocking access to the standard input
 
@@ -86,8 +86,8 @@ Alternative approaches
     adds to `base`
 
 
-Example usages of the alternative approaches
---------------------------------------------
+Example uses of the alternative approaches
+------------------------------------------
 
 [None]
 
@@ -96,8 +96,8 @@ Determination of line break encodings used by handles
 =====================================================
 
 
-Concrete descriptions of usage reasons
---------------------------------------
+Explanations of uses
+--------------------
 
   * Does so for determining the line break and text encoding a handle
     uses for writing
@@ -124,8 +124,8 @@ Alternative approaches
     adds to `base`
 
 
-Example usages of the alternative approaches
---------------------------------------------
+Example uses of the alternative approaches
+------------------------------------------
 
   * [fpco/say#6](https://github.com/fpco/say/pull/6)
 
@@ -134,8 +134,8 @@ Determination of text encodings used by handles
 ===============================================
 
 
-Concrete descriptions of usage reasons
---------------------------------------
+Explanations of uses
+--------------------
 
   * Does so for determining the line break and text encoding a handle
     uses for writing
@@ -159,8 +159,8 @@ Alternative approaches
   * Use `System.IO.hGetEncoding`
 
 
-Example usages of the alternative approaches
---------------------------------------------
+Example uses of the alternative approaches
+------------------------------------------
 
   * [commercialhaskell/rio#265](https://github.com/commercialhaskell/rio/pull/265)
   * [fpco/say#6](https://github.com/fpco/say/pull/6)
@@ -169,8 +169,8 @@ Example usages of the alternative approaches
 Other purposes
 ==============
 
-The concrete descriptions of those usage reasons from which higher-level
-purposes have not yet been distilled and that are therefore not
-mentioned in this document are listed in the file
-[`untreated-usage-reasons`](untreated-usage-reasons): one per line, in
-lexicographic order according to the POSIX locale.
+The concrete use explanations from which higher-level purposes have not
+yet been distilled and that are therefore not mentioned in this document
+are listed in the file
+[`untreated-use-explanations`](untreated-use-explanations): one per
+line, in lexicographic order according to the POSIX locale.
