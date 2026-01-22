@@ -52,50 +52,113 @@ this repository took place in the following spaces:
 
 # Subprojects
 
-## 1. Disentanglement  between `base` and `ghc-internal` - Blocking
+## 1. Disentanglement of `base` and `ghc-internal`
 
-Goal: Determine whether a meaningful and sustainable boundary between `base` and `ghc-internal` is achievable.
+### Goal
 
-1. How much code can realistically be moved from `ghc-internal` back into `base` without addressing known-key items yet?
+Understand whether a meaningful and sustainable boundary between `base`
+and `ghc-internal` is achievable
+
+### Status
+
+Blocking
+
+### Questions
+
+1. How much code can realistically be moved from `ghc-internal` into
+   `base` without addressing known-key items yet?
 2. Which parts of the `base` interface can be deprecated and removed?
-3. Of the categories of code identified, portable, semi-portable etc, which code can be moved?
-4. What technical obstacles remain after such "low-hanging fruit" is removed?
-5. What would constitute a promising outcome from a proof-of-concept refactor?
-6. What findings would indicate that further disentanglement is unlikely without addressing known-key items directly?
+3. Which code can be moved depending on its category: portable,
+   semi-portable, etc.?
+4. What technical obstacles remain after such “low-hanging fruit” is
+   reaped?
+5. What would constitute a promising outcome from a proof-of-concept
+   refactoring?
+6. What findings would indicate that further disentanglement is unlikely
+   to be possible without addressing known-key items?
 
-## 2. Cabal & Tooling Constraints (including Ecosystem Signalling) - Partially Blocking
+## 2. Tooling constraints and ecosystem signaling
 
-Goal: Understand the implications of decoupling `base` versions from GHC versions for tooling and ecosystem conventions.
+### Goal
 
-1. Does the ecosystem require a means for library authors to express compiler constraints? What are the reasons people currently do this?
-1. If a single `base` version can work across multiple GHC versions, how should compiler constraints be expressed?
-2. Are changes required in Cabal or related tooling to support this, and if so, which?
-3. Do we need to resolve this now, in parallel or can it wait until the disentanglement have been further explored?
+Understand the implications of decoupling `base` versioning from GHC
+versioning for tooling and ecosystem conventions
 
-## 3. Stability & Reliability - Deferred
+### Status
 
-Goal: Clarify expectations around stability boundaries once the technical shape becomes clearer.
+Partially blocking
 
-1. What stability guarantees do we expect from `base` compared to `ghc-internal`?
-2. Is it realistic to identify a subset of `ghc-internal` that `base` can rely on with stronger guarantees?
-3. How should unavoidable breaking changes be handled when they affect the `base` - `ghc-internal` boundary?
-4. What do we have to keep in mind when performing this work to ensure a smooth transition for users? "Not breaking something which already works"
+### Questions
 
-## 4. Contributor Workflow & DX - Deferred
+1. Does the ecosystem require a means for library authors to express
+   compiler constraints? What are the reasons for people currently doing
+   this?
+2. If a single `base` version can work across multiple GHC versions, how
+   should compiler constraints be expressed?
+3. Are changes required in Cabal or related tooling to support
+   expressing compiler constraints better, and, if so, which?
+4. Do we need to resolve this issue now, or can we wait until the
+   disentanglement opportunities have been further explored?
 
-Goal: Assess the state of contributor workflows and how they need to be adapted based on the technical progress.
+## 3. Stability and reliability
 
-1. Are current workflows sufficient if `base` remains in the GHC repository?
-2. Which workflow or DX concerns only arise if `base` is developed in a separate repository?
-3. Which workflow changes are prerequisites for progress, and which are optimisations?
-4. How should experimental or refactoring work be carried out to minimise disruption?
+### Goal
 
-## 5. Governance & Maintainership — Deferred
+Have clarity about expectations around stability boundaries
 
-Goal: Understand ownership and responsibility as the technical picture becomes clearer.
+### Status
 
-1. Who is responsible for maintaining compatibility between `base` and new GHC releases?
-2. Who, if anyone, maintains older `base` versions against newer GHCs?
-3. Which governance questions only become relevant if `base` moves to its own repository?
-4. How should responsibilities be shared between GHC developers, the CLC, and the wider community?
-5. What happens if there are no volunteers for certain maintenance tasks on a `base` repo outside the GHC repository?
+Deferred
+
+### Questions
+
+1. What stability guarantees do we expect from `base` compared to
+   `ghc-internal`?
+2. Is it realistic to identify a subset of `ghc-internal` with stronger
+   stability guarantees that `base` can rely on?
+3. How should unavoidable breaking changes be handled when they affect
+   the `base`–`ghc-internal` boundary?
+4. What do we have to keep in mind when performing this work to ensure a
+   smooth transition for users?
+
+## 4. Developer experience
+
+### Goal
+
+Know the state of contributor workflows and how they need to be adapted
+
+### Status
+
+Deferred
+
+### Questions
+
+1. Are current workflows sufficient if `base` remains in the GHC
+   repository?
+2. Which developer experience concerns only arise if `base` is developed
+   in a separate repository?
+3. Which workflow changes are prerequisites for progress, and which are
+   optimizations?
+4. How should experimental or refactoring work be carried out to
+   minimize disruption?
+
+## 5. Governance and maintainership
+
+### Goal
+
+Understand ownership and responsibility
+
+### Status
+
+Deferred
+
+### Questions
+
+1. Who is responsible for maintaining compatibility between `base` and
+   new GHC versions?
+2. Which governance questions only become relevant if `base` moves to
+   its own repository?
+3. How should responsibilities be shared between GHC developers, the
+   CLC, and the wider community?
+4. What happens if there are no volunteers for certain maintenance tasks
+   concerning a `base` repository outside the GHC repository?
