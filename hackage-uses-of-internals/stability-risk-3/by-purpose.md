@@ -166,11 +166,29 @@ Example uses of the alternative approaches
   * [fpco/say#6](https://github.com/fpco/say/pull/6)
 
 
-Other purposes
-==============
+Untreated use explanations
+==========================
 
-The concrete use explanations from which higher-level purposes have not
-yet been distilled and that are therefore not mentioned in this document
-are listed in the file
+The concrete use explanations that are not covered by the higher-level
+purposes mentioned in this document are listed in the file
 [`untreated-use-explanations`](untreated-use-explanations): one per
-line, in lexicographic order according to the POSIX locale.
+line, in lexicographic order according to the POSIX locale. These use
+explanations are not treated further because they do not seem to imply
+that more new, high-level operations should be added to `base` at this
+point, because of one or the other of the following assessments:
+
+  * There is already an alternative to the corresponding use.
+  * The using package is rather exotic.
+  * The using package contains many uses of stability-risk-3 modules,
+    often in code that repeats code in `ghc-internal` to a significant
+    extent, so that a redesign of that package and `ghc-internal` is
+    recommended. (The packages this applies to are `bytestring` and
+    `text`.)
+  * The use explanation is the only one of its kind and occurs at a low
+    level. (This applies to use explanations that refer to the
+    implementations of `handleToFd` in `unix` and `mbFd` in `process`
+    and a few other packages.)
+  * The use explanation belongs to an error-corrected version of an
+    implementation of an operation from `ghc-internal`. (The only
+    example of such a fixed implementaiton is the one of `hDuplicateTo`
+    in `ghcide`.)
