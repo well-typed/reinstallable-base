@@ -27,6 +27,15 @@ this repository took place in the following spaces:
 * [Discourse thread #13319](https://discourse.haskell.org/t/13319)
 * [CLC issue #375](https://github.com/haskell/core-libraries-committee/issues/375)
 
+# Benefits for users
+
+From the perspective of users, the benefit of `base` being reinstallable
+would be that they could upgrade `base` independently of GHC. This would
+in particular support the following workflows:
+
+1. The user updates GHC without updating `base`.
+2. The user updates `base` without updating GHC.
+
 # Exploratory work
 
 * [Hackage uses of GHC-specific `base` modules with stability
@@ -40,11 +49,6 @@ this repository took place in the following spaces:
 
 These are the questions which arose from the discussion around reinstallable base
 on [CLC #375](https://github.com/haskell/core-libraries-committee/issues/375)
-
-**Overall Goal**: Allow end-users to upgrade the version of `base` they depend on independently of updating their compiler.
-
-Proposed Workflow 1: The user has an upper-bound on `base`. They can upgrade their compiler and keep using the older version of base they depended on.
-Proposed Workflow 2: The user wants to carry on using the same compiler but they can upgrade their base version independently as new versions are released.
 
 ## Foundational Questions about the project
 
