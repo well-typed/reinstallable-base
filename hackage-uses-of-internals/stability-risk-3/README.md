@@ -21,13 +21,13 @@ These undertakings are documented in two files:
     The uses are grouped by used module and using package. Each use is
     annotated with the reasons for it or an immediate way to avoid it.
 
-  * The file [`by-purpose.md`](by-purpose.md) discusses the high-level
-    purposes of some of the module uses presented in the previous file.
+  * The file [`by-purpose.md`](by-purpose.md) discusses some of the
+    high-level purposes of module uses presented in the previous file.
     For each purpose, it lists the following:
 
-      - The concrete reasons for using stability-risk-3 modules for this
-        purpose
-      - The Hackage packages that contain these uses
+      - The explanations of uses of stability-risk-3 modules that refer
+        to this purpose
+      - The Hackage packages that contain uses for this purpose
       - Alternative approaches that we recommend for meeting this
         purpose, which make use of our extensions to `base` in some
         cases and functionality provided via existing portable
