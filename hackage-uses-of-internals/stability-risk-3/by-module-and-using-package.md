@@ -187,7 +187,7 @@
 -------------------------
 
   * Includes the complete `ghcjs-base` package in a version very similar
-    to `0.8.0.4`, with the usages mentioned [above](#ghcjs-base-0804)
+    to `0.8.0.4`, with the uses mentioned [above](#ghcjs-base-0804)
 
 
 `haskeline-0.8.3.0`
@@ -237,7 +237,7 @@
 -----------------------------
 
   * Includes the complete `ide-backend-rts-0.1.3.1` package, with the
-    usages mentioned [above](#ide-backend-rts-0131)
+    uses mentioned [above](#ide-backend-rts-0131)
 
 
 `iterIO-0.2.2`
@@ -796,7 +796,7 @@
 -----------------------------
 
   * Includes the complete `ide-backend-rts-0.1.3.1` package, with the
-    usages mentioned [above](#ide-backend-rts-0131-1)
+    uses mentioned [above](#ide-backend-rts-0131-1)
 
 
 `ihaskell-0.12.0.0`
