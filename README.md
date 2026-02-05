@@ -43,7 +43,7 @@ this repository took place in the following spaces:
 
 # Exploratory work
 
-* [Hackage uses of GHC-specific `base` modules with stability
+* [Hackage uses of low-level `base` modules with stability
   risk 3](hackage-uses-of-internals/stability-risk-3)
 * [An attempt to move module implementations that are not tied to GHC
   into `base`](moving-code-to-base/whole-modules)

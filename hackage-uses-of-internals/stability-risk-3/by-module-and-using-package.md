@@ -1426,3 +1426,1081 @@
 ============
 
 [No uses]
+
+
+`System.Posix.Internals`
+========================
+
+
+`ajhc-0.8.0.10`
+---------------
+
+  * Uses `c_chmod`
+      - Does so for defining an operation `setFileMode` to be used on
+        Unix whose interface and implementation are identical to those
+        of `setFileMode` from the `unix` package
+  * Uses `c_close`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `c_getpid`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `c_open`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_BINARY`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_CREAT`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_EXCL`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_NOCTTY`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_NONBLOCK`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_RDWR`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `withFilePath`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+      - Does so for defining an operation `setFileMode` to be used on
+        Unix whose interface and implementation are identical to those
+        of `setFileMode` from the `unix` package
+
+
+`base-orphans-0.9.3`
+--------------------
+
+  * Imports the whole module but does not use anything from it
+
+
+`blockio-uring-0.1.0.0`
+-----------------------
+
+  * Uses `hostIsThreaded`
+      - Does so to ensure that the runtime system uses threading
+
+
+`btrfs-0.2.1.0`
+---------------
+
+  * Uses `peekFilePathLen`
+      - Does so for accessing operating-system functionality regarding
+        Btrfs
+  * Uses `peekFilePath`
+      - Does so for accessing operating-system functionality regarding
+        Btrfs
+  * Uses `withFilePath`
+      - Does so for accessing operating-system functionality regarding
+        Btrfs
+
+
+`bytestring-0.12.2.0`
+---------------------
+
+  * Uses `c_unlink` in tests
+      - Does so for removing a temporary file
+
+
+`Cabal-3.16.0.0`
+----------------
+
+  * Uses `c_getpid`
+      - Does so for implementing a simpler variant of
+        `createTempDirectory`
+  * Uses `withFilePath`
+      - Does so for setting an environment variable on Unix
+
+
+`Cabal-ide-backend-1.23.0.0`
+----------------------------
+
+  * Uses `c_chmod`
+      - Does so for defining an operation `setFileMode` to be used on
+        Unix whose interface and implementation are identical to those
+        of `setFileMode` from the `unix` package
+  * Uses `c_close`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `c_getpid`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `c_open`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_BINARY`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_CREAT`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_EXCL`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_NOCTTY`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_NONBLOCK`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `o_RDWR`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+  * Uses `withFilePath`
+      - Does so for implementing a variant of `System.IO.Temp`
+        functionality
+      - Does so for defining an operation `setFileMode` to be used on
+        Unix whose interface and implementation are identical to those
+        of `setFileMode` from the `unix` package
+
+
+`cabal-install-3.16.0.0`
+------------------------
+
+  * Uses `withFilePath`
+      - Does so in a copy of the `getExecutablePath` implementation from
+        `base-4.6.0.0`
+
+
+`cabal-install-bundle-1.18.0.2.1`
+---------------------------------
+
+  * Uses `c_chmod`
+      - Does so for defining an operation `setFileMode` to be used on
+        Unix whose interface and implementation are identical to those
+        of `setFileMode` from the `unix` package
+  * Uses `withFilePath`
+      - Does so for setting an environment variable on Unix
+
+
+`cabal-install-bundle-1.18.0.2.1`
+---------------------------------
+
+  * Uses `setNonBlockingFD`
+      - Does so for creating a socket
+      - Does so for creating a pair of connected sockets on Unix, using
+        code that is almost identical to the code implementing
+        `Network.Socket.Unix.socketPair`
+      - Does so for accepting a connection
+
+
+`cabal-install-ghc72-0.10.4`
+----------------------------
+
+  * Uses `c_chmod`
+      - Does so for defining an operation `setFileMode` to be used on
+        Unix whose interface is identical and whose implementation is
+        almost identical to that of `setFileMode` from the `unix`
+        package
+
+
+`cabal-install-ghc74-0.10.4`
+----------------------------
+
+  * Uses `c_chmod`
+      - Does so for defining an operation `setFileMode` to be used on
+        Unix whose interface is identical and whose implementation is
+        almost identical to that of `setFileMode` from the `unix`
+        package
+
+
+`Coadjute-0.1.1`
+----------------
+
+  * Uses `lstat`
+      - Does so in the Unix-specific part of a more efficient
+        implementation of `doesPathExist`
+  * Uses `sizeof_stat`
+      - Does so in the Unix-specific part of a more efficient
+        implementation of `doesPathExist`
+
+
+`core-program-0.7.0.0`
+----------------------
+
+  * Uses `hostIsThreaded`
+      - Does so to ensure that the runtime system uses threading
+
+
+`cradle-0.0.0.0`
+----------------
+
+  * Uses `hostIsThreaded`
+      - Does so to ensure that the runtime system uses threading
+
+
+`darcs-2.18.5`
+--------------
+
+  * Uses `c_open`
+      - Does so for implementing a portable variant of `openFd`
+  * Uses `c_close`
+      - Does so for implementing a portable variant of `closeFd`
+
+
+`darcs-beta-2.7.99.2`
+---------------------
+
+  * Uses `c_open`
+      - Does so for implementing a portable variant of `openFd`
+  * Uses `c_close`
+      - Does so for implementing a portable variant of `closeFd`
+  * Uses `c_dup2`
+      - Does so for implementing a portable variant of `dupTo`
+
+
+`darcs-cabalized-2.0.2.2`
+-------------------------
+
+  * Uses `getEcho`
+      - Does so for checking whether the standard input is a terminal
+        device with echo disabled
+  * Uses `setEcho`
+      - Does so for disabling echo for the standard input
+  * Uses `setCooked`
+      - Does so for disabling echo for the standard input
+
+
+`darcs-cabalized-2.0.2.2`
+-------------------------
+
+  * Uses `CStat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `c_fstat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `lstat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `sizeof_stat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `statGetType`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `st_mode`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `st_size`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `st_mtime`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `s_isreg`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `s_isdir`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `s_isfifo`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `c_open`
+      - Does so for implementing a portable variant of `openFd`
+  * Uses `c_close`
+      - Does so for implementing a portable variant of `closeFd`
+  * Uses `c_dup2`
+      - Does so for implementing a portable variant of `dupTo`
+
+
+`directory-1.3.9.0`
+-------------------
+
+  * Uses `CStat`
+      - Does so for implementing `getMetadataAt` for Unix
+
+
+`doctest-0.24.2`
+----------------
+
+  * Uses `c_getpid`
+      - Does so for creating a temporary directory
+
+
+`dura-0.1`
+----------
+
+  * Uses `CFilePath`
+      - Does so for accessing operating-system functionality regarding
+        files
+      - Can use `CString` instead
+  * Uses `c_safe_open`
+      - Does so for accessing operating-system functionality regarding
+        files
+  * Uses `c_close`
+      - Does so for accessing operating-system functionality regarding
+        files
+  * Uses `withFilePath`
+      - Does so for accessing operating-system functionality regarding
+        files
+
+
+`effectful-2.6.0.0`
+-------------------
+
+  * Uses `FD`
+      - Does so for creating a pipe
+      - Can use `CInt` instead
+
+
+`effectful-zoo-0.0.6.0`
+-----------------------
+
+  * Uses `FD`
+      - Does so for creating a pipe
+      - Can use `CInt` instead
+
+
+`exitcode-0.1.0.9`
+------------------
+
+  * Uses `FD`
+      - Does so for implementing an internal class `HasFD`
+      - Can use `CInt` instead
+
+
+`file-io-0.1.5`
+---------------
+
+  * Uses `c_getpid`
+      - Does so for building a semi-random string
+  * Uses `o_EXCL`
+      - Does so for constructing a path for a temporary file
+
+
+`ghcup-0.1.50.2`
+----------------
+
+  * Uses `peekFilePath`
+      - Does so for reading a directory entry
+  * Uses `withFilePath`
+      - Does so for implementing a variant of `openFd`
+
+
+`Glob-0.10.2`
+-------------
+
+  * Uses `lstat`
+      - Does so in the Unix-specific part of a more efficient
+        implementation of `doesDirectoryExist`
+  * Uses `sizeof_stat`
+      - Does so in the Unix-specific part of a more efficient
+        implementation of `doesDirectoryExist`
+  * Uses `s_isdir`
+      - Does so in the Unix-specific part of a more efficient
+        implementation of `doesDirectoryExist`
+  * Uses `st_mode`
+      - Does so in the Unix-specific part of a more efficient
+        implementation of `doesDirectoryExist`
+
+
+`hackport-0.9.1.0`
+------------------
+
+  * Includes the complete `Cabal` package in some version version, with
+    the uses mentioned [above](#cabal-31600) and several more
+  * Includes the complete `cabal-install` package in some version, with
+    the uses mentioned [above](#cabal-install-31600)
+
+
+`haddock-2.29.1`
+----------------
+
+  * Uses `c_getpid`
+      - Does so for getting the running process’s ID on Unix
+
+
+`haddock-api-2.29.1`
+--------------------
+
+  * Uses `c_getpid`
+      - Does so for getting the running process’s ID on Unix
+
+
+`hashed-storage-0.5.11`
+-----------------------
+
+  * Uses `CStat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `c_stat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `c_fstat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `lstat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files` and a small addition to it
+  * Uses `sizeof_stat`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `st_mode`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `st_size`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `st_mtime`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `s_isreg`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+  * Uses `s_isdir`
+      - Does so for implementing a portable variant of part of
+        `System.Posix.Files`
+
+
+`haskeline-0.8.3.0`
+-------------------
+
+  * Uses `FD`
+      - Does so for implementing various operations for Unix
+      - Can use `CInt` instead
+
+
+`haskell-src-exts-1.23.1`
+-------------------------
+
+  * Incorporates the complete `System.Directory` module, for various
+    uses in tests
+
+
+`hmp3-1.5.2.1`
+--------------
+
+  * Uses `c_stat`
+      - Does so for obtaining the status of a file
+  * Uses `c_access`
+      - Does so for implementing a variant of `getPermissions`
+  * Uses `sizeof_stat`
+      - Does so for obtaining the status of a file
+
+
+`hs-server-starter-0.1.2.0`
+---------------------------
+
+  * Uses `setNonBlockingFD`
+      - Does so for setting a socket file descriptor to operate in
+        non-blocking mode
+
+
+`hsyscall-0.4`
+--------------
+
+  * Re-exports `c_open`
+      - Does so for providing low-level I/O functionality
+  * Re-exports `c_close`
+      - Does so for providing low-level I/O functionality
+  * Re-exports `c_read`
+      - Does so for providing low-level I/O functionality
+  * Re-exports `c_write`
+      - Does so for providing low-level I/O functionality
+  * Re-exports `c_stat `
+      - Does so for providing low-level I/O functionality
+  * Re-exports `c_fcntl_read`
+      - Does so for providing low-level I/O functionality
+  * Re-exports `c_fcntl_write`
+      - Does so for providing low-level I/O functionality
+  * Re-exports `c_fcntl_lock`
+      - Does so for providing low-level I/O functionality
+
+
+`hw-polysemy-0.3.1.2`
+---------------------
+
+  * Uses `FD`
+      - Does so for creating a pipe
+      - Can use `CInt` instead
+
+
+`ide-backend-server-0.10.0.2`
+-----------------------------
+
+  * Uses `FD`
+      - Does so for setting the controlling terminal of the running
+        process
+      - Can use `CInt` instead
+  * Uses `c_fcntl_write`
+      - Does so for duplicating a file descriptor
+  * Uses `withFilePath`
+      - Does so for implementing a variant of `executeFile`
+
+
+`lazy-scope-0.0.1`
+------------------
+
+  * Uses `c_unlink` in tests
+      - Does so for removing a temporary file
+
+
+`libfuse3-0.2.1.0`
+------------------
+
+  * Uses `c_fstat`
+      - Does so for providing a high-level operation for obtaining the
+        status of a file
+  * Uses `lstat`
+      - Does so for providing a high-level operation for obtaining the
+        status of a file
+  * Uses `c_access`
+      - Does so for obtaining the access permissions of a file
+  * Uses `peekFilePath`
+      - Does so for constructing a @fuse_operations@ structure from a
+        high-level description of it
+      - Does so for parsing a command line argument specifying a mount
+        point
+  * Uses `withFilePath`
+      - Does so for constructing a @fuse_operations@ structure from a
+        high-level description of it
+      - Does so for obtaining the access permissions of a file
+      - Does so for providing a high-level operation for obtaining the
+        status of a file
+      - Does so for providing a high-level operation for obtaining the
+        status of a file system
+  * Uses `newFilePath`
+      - Does so for providing a resource-safe version of it
+
+
+`libyaml-0.1.4`
+---------------
+
+  * Uses `c_open`
+      - Does so for opening a file
+  * Uses `o_NOCTTY`
+      - Does so for opening a file
+  * Uses `o_RDONLY`
+      - Does so for opening a file for reading
+  * Uses `o_CREAT`
+      - Does so for opening a file for writing
+  * Uses `o_TRUNC`
+      - Does so for opening a file for writing
+  * Uses `o_WRONLY`
+      - Does so for opening a file for writing
+  * Uses `withFilePath`
+      - Does so for opening a file
+
+
+`libyaml-streamly-0.2.3.0`
+--------------------------
+
+  * Uses `c_open`
+      - Does so for opening a file
+  * Uses `o_NOCTTY`
+      - Does so for opening a file
+  * Uses `o_RDONLY`
+      - Does so for opening a file for reading
+  * Uses `o_CREAT`
+      - Does so for opening a file for writing
+  * Uses `o_TRUNC`
+      - Does so for opening a file for writing
+  * Uses `o_WRONLY`
+      - Does so for opening a file for writing
+  * Uses `withFilePath`
+      - Does so for opening a file
+
+
+`lock-file-0.7.0.0`
+-------------------
+
+  * Uses `c_open`
+      - Does so for creating a lock file
+  * Uses `c_close`
+      - Does so for creating a lock file
+  * Uses `c_getpid`
+      - Does so for creating a lock file
+  * Uses `o_BINARY`
+      - Does so for creating a lock file
+  * Uses `o_CREAT`
+      - Does so for creating a lock file
+  * Uses `o_EXCL`
+      - Does so for creating a lock file
+  * Uses `o_NOCTTY`
+      - Does so for creating a lock file
+  * Uses `o_NONBLOCK`
+      - Does so for creating a lock file
+  * Uses `o_RDWR`
+      - Does so for creating a lock file
+  * Uses `withFilePath`
+      - Does so for creating a lock file
+
+
+`MFlow-0.4.6.0`
+---------------
+
+  * Imports the whole module but does not use anything from it
+
+
+`MissingK-0.0.1`
+----------------
+
+  * Uses `withFilePath`
+      - Does so for setting an environment variable
+
+
+`network-3.2.7.0`
+-----------------
+
+  * Uses `setNonBlockingFD`
+      - Does so for setting a file descriptor to operate in non-blocking
+        mode on Unix
+  * Uses `setCloseOnExec`
+      - Does so for setting the `close_on_exec` flag of a file
+        descriptor on Unix
+
+
+`network-fancy-0.2.4`
+---------------------
+
+  * Uses `FD`
+      - Does so for setting a socket file descriptor to operate in
+        non-blocking mode
+      - Can use `CInt` instead
+  * Uses `setNonBlockingFD`
+      - Does so for setting a socket file descriptor to operate in
+        non-blocking mode
+
+
+`NGLess-1.5.0`
+--------------
+
+  * Uses `c_getpid`
+      - Does so for creating a temporary directory
+  * Uses `c_open`
+      - Does so for creating a lock file
+  * Uses `c_close`
+      - Does so for creating a lock file
+  * Uses `o_BINARY`
+      - Does so for creating a lock file
+  * Uses `o_CREAT`
+      - Does so for creating a lock file
+  * Uses `o_EXCL`
+      - Does so for creating a lock file
+  * Uses `o_NOCTTY`
+      - Does so for creating a lock file
+  * Uses `o_NONBLOCK`
+      - Does so for creating a lock file
+  * Uses `o_RDWR`
+      - Does so for creating a lock file
+  * Uses `withFilePath`
+      - Does so for creating a lock file
+
+
+`ngx-export-1.7.10.1`
+---------------------
+
+  * Uses `CFLock`
+      - Does so for performing file locking
+  * Uses `c_fcntl_lock`
+      - Does so for choosing a file locking implementation
+
+
+`pidfile-0.1.0.4`
+-----------------
+
+  * Uses `c_open`
+      - Does so for creating and opening a PID file
+  * Uses `c_write`
+      - Does so for creating and opening a PID file
+  * Uses `c_close`
+      - Does so for closing and removing a PID file
+  * Uses `c_unlink`
+      - Does so for closing and removing a PID file
+  * Uses `o_CREAT`
+      - Does so for creating and opening a PID file
+  * Uses `o_EXCL`
+      - Does so for creating and opening a PID file
+  * Uses `o_WRONLY`
+      - Does so for creating and opening a PID file
+  * Uses `withFilePath`
+      - Does so for creating and opening a PID file
+
+
+`plugins-1.6.2.1`
+-----------------
+
+  * Uses `c_open`
+      - Does so for creating and opening a file
+  * Uses `o_BINARY`
+      - Does so for creating and opening a file
+  * Uses `o_CREAT`
+      - Does so for creating and opening a file
+  * Uses `o_EXCL`
+      - Does so for creating and opening a file
+  * Uses `o_NOCTTY`
+      - Does so for creating and opening a file
+  * Uses `o_NONBLOCK`
+      - Does so for creating and opening a file
+  * Uses `o_RDWR`
+      - Does so for creating and opening a file
+  * Uses `withFilePath`
+      - Does so for creating and opening a file
+
+
+`posix-realtime-0.0.0.4`
+------------------------
+
+  * Imports the whole module but does not use anything from it
+
+
+`posix-socket-0.3`
+------------------
+
+  * Uses `setNonBlockingFD`
+      - Does so for creating a socket
+      - Does so for accepting a connection
+      - Does so for potentially accepting a connection
+
+
+`process-1.6.26.1`
+------------------
+
+  * Uses `FD`
+      - Does so for providing the file descriptors for the standard
+        input, the standard output, and the standard error
+      - Does so for constructing a handle from a file descriptor
+      - Does so for obtaining the file descriptor of a handle
+      - Does so for creating a pipe
+      - Does so for running an interactive process
+      - Can use `CInt` instead
+  * Uses `fdGetMode`
+      - Does so for constructing a handle from a file descriptor
+  * Uses `withFilePath`
+      - Does so for getting an environment variable
+      - Does so for creating a process
+
+
+`process-leksah-1.0.1.4`
+------------------------
+
+  * Uses `FD`
+      - Does so for providing the file descriptors for the standard
+        input, the standard output, and the standard error
+      - Does so for constructing a handle from a file descriptor
+      - Does so for obtaining the file descriptor of a handle
+      - Does so for running an interactive process
+      - Can use `CInt` instead
+
+
+`pugs-compat-0.0.6.20150815`
+----------------------------
+
+  * Imports the whole module but does not use anything from it
+
+
+`rawfilepath-1.1.1`
+-------------------
+
+  * Uses `FD`
+      - Does so for providing the file descriptors for the standard
+        input, the standard output, and the standard error
+      - Does so for obtaining the file descriptor of a handle
+      - Does so for creating a pipe
+      - Does so for running an interactive process
+      - Can use `CInt` instead
+
+
+`rz-pipe-0.1.0`
+---------------
+
+  * Uses `FD`
+      - Does so for parsing a file descriptor
+      - Can use `CInt` instead
+
+
+`scion-browser-0.5.0`
+---------------------
+
+  * Uses `c_getpid`
+      - Does so for creating a temporary directory
+      - Does so for creating and opening a file
+  * Uses `c_open`
+      - Does so for creating and opening a file
+  * Uses `c_close`
+      - Does so for creating and opening a file
+  * Uses `o_BINARY`
+      - Does so for creating and opening a file
+  * Uses `o_CREAT`
+      - Does so for creating and opening a file
+  * Uses `o_EXCL`
+      - Does so for creating and opening a file
+  * Uses `o_NOCTTY`
+      - Does so for creating and opening a file
+  * Uses `o_NONBLOCK`
+      - Does so for creating and opening a file
+  * Uses `o_RDWR`
+      - Does so for creating and opening a file
+  * Uses `withFilePath`
+      - Does so for creating and opening a file
+
+
+`shell-pipe-0.1`
+----------------
+
+  * Imports the whole module but does not use anything from it
+
+
+`sizes-2.4.0`
+-------------
+
+  * Uses `CFilePath`
+      - Does so for obtaining the status of a file system
+      - Can use `CString` instead
+
+
+`splice-0.6.1.1`
+----------------
+
+  * Uses `setNonBlockingFD`
+      - Does so for implementing socket-to-socket data transfer on Linux
+
+
+`streamly-0.10.1`
+-----------------
+
+  * Uses `c_write`
+      - Does so for non-blocking writing
+  * Uses `c_safe_write`
+      - Does so for non-blocking writing
+
+
+`streamly-process-0.3.1`
+------------------------
+
+  * Uses `fdGetMode`
+      - Does so for constructing a handle from a standard file
+        descriptor
+
+
+`system-fileio-0.3.16.7`
+------------------------
+
+  * Uses `c_open`
+      - Does so for opening a file
+  * Uses `c_close`
+      - Does so for opening a file
+  * Uses `o_NOCTTY`
+      - Does so for opening a file
+  * Uses `o_NONBLOCK`
+      - Does so for opening a file
+  * Uses `o_RDONLY`
+      - Does so for opening a file for reading
+  * Uses `o_WRONLY`
+      - Does so for opening a file for writing or appending to it
+  * Uses `o_APPEND`
+      - Does so for opening a file for appending to it
+  * Uses `o_RDWR`
+      - Does so for opening a file for reading and writing
+  * Uses `o_CREAT`
+      - Does so for opening a file for writing, reading and writing, or
+        appending
+  * Uses `withFilePath`
+      - Does so for canonicalizing a path on Unix
+      - Does so for checking whether a path denotes a directory on Unix
+      - Does so for creating a directory on Unix
+      - Does so for opening a file
+      - Does so for opening a file on Unix
+      - Does so for opening a directory on Unix
+      - Does so for removing a file on Unix
+      - Does so for removing an empty directory on Unix
+      - Does so for renaming a file on Unix
+      - Does so for copying file permissions
+      - Does so for setting the working directory on Unix
+
+`temporary-rc-1.2.0.3`
+----------------------
+
+  * Uses `c_getpid`
+      - Does so for creating a temporary directory
+      - Does so for creating and opening a file
+  * Uses `c_open`
+      - Does so for creating and opening a file
+  * Uses `c_close`
+      - Does so for creating and opening a file
+  * Uses `o_BINARY`
+      - Does so for creating and opening a file
+  * Uses `o_CREAT`
+      - Does so for creating and opening a file
+  * Uses `o_EXCL`
+      - Does so for creating and opening a file
+  * Uses `o_NOCTTY`
+      - Does so for creating and opening a file
+  * Uses `o_NONBLOCK`
+      - Does so for creating and opening a file
+  * Uses `o_RDWR`
+      - Does so for creating and opening a file
+  * Uses `withFilePath`
+      - Does so for creating and opening a file
+
+
+`temporary-resourcet-0.1.0.1`
+-----------------------------
+
+  * Uses `c_getpid`
+      - Does so for creating a temporary directory
+      - Does so for creating and opening a file
+  * Uses `c_open`
+      - Does so for creating and opening a file
+  * Uses `c_close`
+      - Does so for creating and opening a file
+  * Uses `o_BINARY`
+      - Does so for creating and opening a file
+  * Uses `o_CREAT`
+      - Does so for creating and opening a file
+  * Uses `o_EXCL`
+      - Does so for creating and opening a file
+  * Uses `o_NOCTTY`
+      - Does so for creating and opening a file
+  * Uses `o_NONBLOCK`
+      - Does so for creating and opening a file
+  * Uses `o_RDWR`
+      - Does so for creating and opening a file
+  * Uses `withFilePath`
+      - Does so for creating and opening a file
+
+
+`text-ansi-0.3.0.1`
+-------------------
+
+  * Uses `c_isatty`
+      - Does so for checking whether the standard input is a terminal
+        device
+
+
+`unix-2.8.7.0`
+--------------
+
+  * Uses `CFilePath`
+      - Does so for implementing various operations for Unix
+      - Can use `CString` instead
+  * Uses `CStat`
+      - Does so for implementing `getFileStatus`
+      - Does so for implementing `getSymbolicLinkStatus`
+  * Uses `CFlock`
+      - Does so for implementing various operations for Unix
+  * Uses `CSigset`
+      - Does so for implementing various operations for Unix
+  * Uses `CUtsname`
+      - Does so for implementing `getSystemID`
+  * Uses `CTermios`
+      - Does so for implementing various operations for Unix
+  * Uses `c_umask`
+      - Does so for implementing `setFileCreationMask`
+  * Uses `c_mkfifo`
+      - Does so for implementing `createNamedPipe`
+  * Uses `c_link`
+      - Does so for implementing `createLink`
+  * Uses `c_utime`
+      - Does so for implementing various operations for Unix
+  * Uses `c_unlink`
+      - Does so for implementing `removeLink`
+  * Uses `c_chmod`
+      - Does so for implementing `setFileMode`
+  * Uses `c_stat`
+      - Does so for implementing `getFileStatus`
+  * Uses `c_fstat`
+      - Does so for implementing `getFdStatus`
+  * Uses `c_ftruncate`
+      - Does so for implementing `setFdSize`
+  * Uses `c_access`
+      - Does so for implementing various operations for Unix
+  * Uses `c_fcntl_read`
+      - Does so for implementing various operations for Unix
+  * Uses `c_fcntl_write`
+      - Does so for implementing various operations for Unix
+  * Uses `c_lseek`
+      - Does so for implementing `fdSeek`
+  * Uses `c_fcntl_lock`
+      - Does so for implementing various operations for Unix
+  * Uses `c_sigemptyset`
+      - Does so for implementing `emptySignalSet`
+  * Uses `c_sigaddset`
+      - Does so for implementing `addSignal`
+  * Uses `c_sigprocmask`
+      - Does so for implementing various operations for Unix
+  * Uses `c_lflag`
+      - Does so for implementing various operations for Unix
+  * Uses `sizeof_sigset_t`
+      - Does so for implementing various operations for Unix
+  * Uses `st_dev`
+      - Does so for implementing `deviceID`
+  * Uses `st_ino`
+      - Does so for implementing `fileID`
+  * Uses `st_mode`
+      - Does so for implementing `fileMode`
+  * Uses `st_size`
+      - Does so for implementing `fileSize`
+  * Uses `st_mtime`
+      - Does so for implementing various operations for Unix
+  * Uses `o_CREAT`
+      - Does so for implementing various operations for Unix
+  * Uses `o_EXCL`
+      - Does so for implementing various operations for Unix
+  * Uses `o_TRUNC`
+      - Does so for implementing various operations for Unix
+  * Uses `o_NOCTTY`
+      - Does so for implementing various operations for Unix
+  * Uses `o_NONBLOCK`
+      - Does so for implementing various operations for Unix
+  * Uses `o_RDONLY`
+      - Does so for implementing various operations for Unix
+  * Uses `o_WRONLY`
+      - Does so for implementing various operations for Unix
+  * Uses `o_APPEND`
+      - Does so for implementing various operations for Unix
+  * Uses `o_RDWR`
+      - Does so for implementing various operations for Unix
+  * Uses `newFilePath`
+      - Does so for implementing various operations for Unix
+  * Uses `peekFilePath`
+      - Does so for implementing various operations for Unix
+  * Uses `peekFilePathLen`
+      - Does so for implementing various operations for Unix
+  * Uses `withFilePath`
+      - Does so for implementing various operations for Unix
+  * Uses `hostIsThreaded`
+      - Does so for locking a semaphore
+
+
+`unix-bytestring-0.4.0.3`
+-------------------------
+
+  * Uses `c_lseek`
+      - Does so for implementing various operations for Unix
+
+
+`unliftio-0.2.25.1`
+-------------------
+
+  * Uses `FD`
+      - Does so for creating a pipe
+      - Can use `CInt` instead
+  * Uses `CFilePath`
+      - Does so for implementing various operations for Unix
+      - Can use `CString` instead
+  * Uses `c_getpid`
+      - Does so for creating a temporary directory
+  * Uses `c_safe_open`
+      - Does so for implementing various operations for Unix
+  * Uses `c_close`
+      - Does so for implementing various operations for Unix
+  * Uses `setNonBlockingFD`
+  * Uses `withFilePath`
+      - Does so for implementing various operations for Unix
+
+
+`wai-cli-0.2.3`
+---------------
+
+  * Uses `setNonBlockingFD`
+      - Does so for setting a socket file descriptor to operate in
+        non-blocking mode

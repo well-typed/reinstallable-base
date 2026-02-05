@@ -1,6 +1,6 @@
-# Hackage uses of GHC-specific `base` modules with stability risk 3
+# Hackage uses of low-level `base` modules with stability risk 3
 
-[Several characteristics of GHC-specific `base`
+[Several characteristics of low-level `base`
 modules][base-module-characteristics] have been identified. One of these
 characteristics is how much a module contributes to the need for version
 changes according to the [PVP][pvp], which is called its stability risk.
@@ -10,8 +10,8 @@ with stability risk 3, the highest one, as well as the reasons for them.
 To make some of these uses unnecessary, we have extended `base` with
 additional functionality that is provided via portable interfaces.
 Furthermore, we have developed recommendations for avoiding certain uses
-of GHC-specific modules and have changed several Hackage packages
-according to these recommendations.
+of low-level modules and have changed several Hackage packages according
+to these recommendations.
 
 These undertakings are documented in two files:
 

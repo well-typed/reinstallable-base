@@ -1,47 +1,151 @@
 Can be imported from `GHC.IO.Handle`
 Can be imported from `System.IO`
 Can use `(<!>)` instead
+Can use `CInt` instead
+Can use `CString` instead
 Can use `round` instead
 Does perhaps not need to do this, because, according to a comment in `SubHask.Compatibility.Base`, it does so only because of `NoIO` not being a `Functor` instance, while in fact `NoIO` is a `Monad` instance, the `Functor`–`Applicative`–`Monad` proposal was implemented in GHC 7.10, and `subhask-0.1.1.0` requires GHC 7.10 or later
+Does so for accepting a connection
+Does so for accessing operating-system functionality regarding Btrfs
+Does so for accessing operating-system functionality regarding files
 Does so for acquiring the file path underlying a handle
 Does so for automatic finalization of handles
+Does so for building a semi-random string
+Does so for canonicalizing a path on Unix
 Does so for checking whether a file descriptor refers to a socket on Windows
+Does so for checking whether a path denotes a directory on Unix
+Does so for checking whether the standard input is a terminal device
+Does so for checking whether the standard input is a terminal device with echo disabled
+Does so for choosing a file locking implementation
+Does so for closing and removing a PID file
+Does so for constructing a @fuse_operations@ structure from a high-level description of it
 Does so for constructing a Haskell handle from an operating-system handle on Windows
+Does so for constructing a handle from a file descriptor
+Does so for constructing a handle from a standard file descriptor
+Does so for constructing a path for a temporary file
+Does so for copying file permissions
+Does so for creating a directory on Unix
+Does so for creating a lock file
+Does so for creating a pair of connected sockets on Unix, using code that is almost identical to the code implementing `Network.Socket.Unix.socketPair`
+Does so for creating a pipe
+Does so for creating a process
+Does so for creating a socket
+Does so for creating a temporary directory
+Does so for creating and opening a PID file
+Does so for creating and opening a file
+Does so for defining an operation `setFileMode` to be used on Unix whose interface and implementation are identical to those of `setFileMode` from the `unix` package
+Does so for defining an operation `setFileMode` to be used on Unix whose interface is identical and whose implementation is almost identical to that of `setFileMode` from the `unix` package
+Does so for disabling echo for the standard input
+Does so for duplicating a file descriptor
 Does so for duplicating a handle without flushing, using code that is almost identical to the code implementing `GHC.IO.Handle.hDuplicate`
+Does so for ensuring that the runtime system uses threading
+Does so for getting an environment variable
+Does so for getting the running process’s ID on Unix
 Does so for handling I/O errors
+Does so for implementing `addSignal`
+Does so for implementing `createLink`
+Does so for implementing `createNamedPipe`
+Does so for implementing `deviceID`
+Does so for implementing `emptySignalSet`
+Does so for implementing `fdSeek`
+Does so for implementing `fileID`
+Does so for implementing `fileMode`
+Does so for implementing `fileSize`
+Does so for implementing `getFdStatus`
+Does so for implementing `getFileStatus`
+Does so for implementing `getMetadataAt` for Unix
+Does so for implementing `getSymbolicLinkStatus`
+Does so for implementing `getSystemID`
 Does so for implementing `hGetChunk`
 Does so for implementing `hGetLine`
 Does so for implementing `hPutStr`
 Does so for implementing `handleToFd`
+Does so for implementing `removeLink`
+Does so for implementing `setFdSize`
+Does so for implementing `setFileCreationMask`
+Does so for implementing `setFileMode`
+Does so for implementing a portable variant of `closeFd`
+Does so for implementing a portable variant of `dupTo`
+Does so for implementing a portable variant of `openFd`
+Does so for implementing a portable variant of part of `System.Posix.Files`
+Does so for implementing a portable variant of part of `System.Posix.Files` and a small addition to it
+Does so for implementing a simpler variant of `createTempDirectory`
+Does so for implementing a variant of `System.IO.Temp` functionality
+Does so for implementing a variant of `executeFile`
+Does so for implementing a variant of `getPermissions`
 Does so for implementing a variant of `hDuplicateTo`, which in particular does not suffer from a certain bug
+Does so for implementing a variant of `openFd`
+Does so for implementing an internal class `HasFD`
 Does so for implementing several other low-level, Windows-specific operations
+Does so for implementing socket-to-socket data transfer on Linux
 Does so for implementing the internal `hPut` operation, defined in `Data.ByteString.Builder.Internal`
 Does so for implementing the lazy variant of `hGetContents`
 Does so for implementing the strict variant of `hGetContents`
+Does so for implementing various operations for Unix
+Does so for locking a semaphore
 Does so for marking the file descriptor of a handle as blocking on non-JavaScript platforms
 Does so for no apparent reason
+Does so for non-blocking writing
+Does so for obtaining a file descriptor from a handle
 Does so for obtaining a file descriptor, suitable for writing, from a handle
+Does so for obtaining the access permissions of a file
+Does so for obtaining the status of a file
+Does so for obtaining the status of a file system
+Does so for opening a directory on Unix
+Does so for opening a file
+Does so for opening a file for appending to it
+Does so for opening a file for reading
+Does so for opening a file for reading and writing
+Does so for opening a file for writing
+Does so for opening a file for writing or appending to it
+Does so for opening a file for writing, reading and writing, or appending
+Does so for opening a file on Unix
+Does so for parsing a command line argument specifying a mount point
+Does so for parsing a file descriptor
+Does so for performing file locking
+Does so for potentially accepting a connection
+Does so for providing a high-level operation for obtaining the status of a file
+Does so for providing a high-level operation for obtaining the status of a file system
+Does so for providing a resource-safe version of it
+Does so for providing low-level I/O functionality
+Does so for providing the file descriptors for the standard input, the standard output, and the standard error
 Does so for reading a bunch of characters, using code that is identical to the code implementing `GHC.IO.Handle.Text.getSomeCharacters`
 Does so for reading a chunk of text
+Does so for reading a directory entry
 Does so for reading a line
 Does so for reading available data into a character buffer, using code that is almost identical to the code implementing `GHC.IO.Handle.Text.maybeFillReadBuffer`
 Does so for reading until right after a newline has been read or, if no newline is present, until the end of the buffer is reached (with code that, according to a source code comment, has been “hacked out” of `Data.ByteString`)
 Does so for reading until the next NUL character, using code that is almost identical to the code implementing `Data.ByteString.hGetLine`
 Does so for redirecting the output of a handle to a byte string (via a temporary file)
+Does so for removing a file on Unix
+Does so for removing a temporary file
+Does so for removing an empty directory on Unix
+Does so for renaming a file on Unix
 Does so for replicating `stdHandleFinalizer` from `GHC.Internal.IO.Handle.FD` and `GHC.Internal.IO.Handle.Windows`
 Does so for resetting standard handles to their default configurations
+Does so for running an interactive process
 Does so for selectively setting `FILE_FLAG_OVERLAPPED`
+Does so for setting a file descriptor to operate in non-blocking mode on Unix
+Does so for setting a socket file descriptor to operate in non-blocking mode
+Does so for setting an environment variable
+Does so for setting an environment variable on Unix
 Does so for setting and restoring the file descriptor of a handle
+Does so for setting the `close_on_exec` flag of a file descriptor on Unix
+Does so for setting the controlling terminal of the running process
+Does so for setting the working directory on Unix
 Does so for signaling an end of transmission using SMP
 Does so for signaling an end of transmission using TLS
 Does so for writing out data from a character buffer
 Does so for writing out data from a character buffer, using code that is almost identical to the code implementing `GHC.IO.Handle.Text.commitBuffer`
 Does so for writing out data from a character buffer, using code that is identical to the code implementing `GHC.IO.Handle.Text.commitBuffer`
 Does so for writing streams with special handling of UTF-8 and no newline conversion, using code that is almost identical to code from `GHC.IO.Handle.Text`
+Does so in a copy of the `getExecutablePath` implementation from `base-4.6.0.0`
 Does so in a re-implementation of `readFile` that is better behaved regarding profiling
 Does so in preparation for file synchronization
 Does so in some strange-looking code
 Does so in tests to swap the configurations of two handles
+Does so in the Unix-specific part of a more efficient implementation of `doesDirectoryExist`
+Does so in the Unix-specific part of a more efficient implementation of `doesPathExist`
 Does so to obtain the next spare character buffer, using code that is almost identical to the code implementing `GHC.Internal.IO.Handle.Text.getSpareBuffer`
 Does so to obtain the next spare character buffer, using code that is identical to the code implementing `GHC.Internal.IO.Handle.Text.getSpareBuffer`
 Does so to swap the configurations of two handles

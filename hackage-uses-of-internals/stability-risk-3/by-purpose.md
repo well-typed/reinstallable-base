@@ -175,15 +175,26 @@ purposes mentioned in this document are listed in the file
 line, in lexicographic order according to the POSIX locale. These use
 explanations are not treated further because they do not seem to imply
 that more new, high-level operations should be added to `base` at this
-point, because of one or the other of the following assessments:
+point, typically because of one or the other of the following
+assessments:
 
   * There is already an alternative to the corresponding use.
+  * A dedicated package should be created to provide alternatives to the
+    corresponding use and similar ones. (Concretely, a lot of uses of
+    `System.Posix.Internals` would become obsolete if there were a
+    package that provides the part of the `unix` package that exposes
+    [the POSIX functionality that is also offered by Microsoft Windows’s
+    `UCRT.DLL`](https://learn.microsoft.com/en-us/cpp/c-runtime-library/compatibility).
   * The using package is rather exotic.
   * The using package contains many uses of stability-risk-3 modules,
     often in code that repeats code in `ghc-internal` to a significant
     extent, so that a redesign of that package and `ghc-internal` is
     recommended. (The packages this applies to are `bytestring` and
     `text`.)
+  * The using package contains many uses of features provided by
+    stability-risk-3 modules that are so low-level that it may well be
+    appropriate to directly use the FFI instead. (The package this
+    applies to is `unix`.)
   * The use explanation is the only one of its kind and occurs at a low
     level. (This applies to use explanations that refer to the
     implementations of `handleToFd` in `unix` and `mbFd` in `process`
