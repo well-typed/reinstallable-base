@@ -5,21 +5,38 @@ modules][base-module-characteristics] have been identified. One of these
 characteristics is how much a module contributes to the need for version
 changes according to the [PVP][pvp], which is called its stability risk.
 
-We have determined and documented all concrete Hackage uses of modules
-with stability risk 3, the highest one, as well as the reasons for them.
-To make some of these uses unnecessary, we have extended `base` with
+We have determined and documented concrete Hackage uses of modules with
+stability risk 3, the highest one, as well as the reasons for them. To
+make some of these uses unnecessary, we have extended `base` with
 additional functionality that is provided via portable interfaces.
 Furthermore, we have developed recommendations for avoiding certain uses
 of low-level modules and have changed several Hackage packages according
 to these recommendations.
 
-These undertakings are documented in two files:
+For determining Hackage uses of stability-risk-3 modules, we have
+considered all of the seventeen thousand packages on Hackage except for
+the following ones:
+
+  * `base`
+  * `ghc`
+  * `ghc-boot`
+  * `ghc-boot-th`
+  * `ghc-instances`
+  * `ghc-lib`
+  * `ghc-lib-parser`
+  * `ghci`
+  * `lhc`
+  * `rebase`
+  * `rerebase`
+
+The results of our investigation are documented in two files:
 
   * The file
     [`by-module-and-using-package.md`](by-module-and-using-package.md)
-    lists all uses of modules with stability risk 3 by Hackage packages.
-    The uses are grouped by used module and using package. Each use is
-    annotated with the reasons for it or an immediate way to avoid it.
+    lists all uses of modules with stability risk 3 by the inspected
+    Hackage packages. The uses are grouped by used module and using
+    package. Each use is annotated with the reasons for it or an
+    immediate way to avoid it.
 
   * The file [`by-purpose.md`](by-purpose.md) discusses some of the
     high-level purposes of module uses presented in the previous file.
