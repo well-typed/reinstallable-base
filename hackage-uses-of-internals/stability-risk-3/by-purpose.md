@@ -197,7 +197,7 @@ assessments:
     applies to is `unix`.)
   * The use explanation is the only one of its kind and occurs at a low
     level. (This applies to use explanations that refer to the
-    implementations of `handleToFd` in `unix` and `mbFd` in `process`
+    implementations of `handleToFd` in `unix` and of `mbFd` in `process`
     and a few other packages.)
   * The use explanation belongs to an error-corrected version of an
     implementation of an operation from `ghc-internal`. (The only
