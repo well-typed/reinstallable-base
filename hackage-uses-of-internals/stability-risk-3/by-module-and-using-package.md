@@ -1955,12 +1955,12 @@
   * Uses `c_access`
       - Does so for obtaining the access permissions of a file
   * Uses `peekFilePath`
-      - Does so for constructing a @fuse_operations@ structure from a
+      - Does so for constructing a `fuse_operations` structure from a
         high-level description of it
       - Does so for parsing a command line argument specifying a mount
         point
   * Uses `withFilePath`
-      - Does so for constructing a @fuse_operations@ structure from a
+      - Does so for constructing a `fuse_operations` structure from a
         high-level description of it
       - Does so for obtaining the access permissions of a file
       - Does so for providing a high-level operation for obtaining the

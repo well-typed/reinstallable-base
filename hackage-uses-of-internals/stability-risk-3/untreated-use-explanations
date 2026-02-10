@@ -18,7 +18,7 @@ Does so for checking whether the standard input is a terminal device
 Does so for checking whether the standard input is a terminal device with echo disabled
 Does so for choosing a file locking implementation
 Does so for closing and removing a PID file
-Does so for constructing a @fuse_operations@ structure from a high-level description of it
+Does so for constructing a `fuse_operations` structure from a high-level description of it
 Does so for constructing a Haskell handle from an operating-system handle on Windows
 Does so for constructing a handle from a file descriptor
 Does so for constructing a handle from a standard file descriptor
